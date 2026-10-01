@@ -1,0 +1,29 @@
+{
+  "data_source": "PaySim",
+  "rows": 600000,
+  "fraud_rows": 8213,
+  "best_model": "RandomForest",
+  "models": [
+    {
+      "model": "RandomForest",
+      "precision": 1.0,
+      "recall": 0.997,
+      "f1": 0.9985,
+      "roc_auc": 1.0,
+      "pr_auc": 0.9992
+    },
+    {
+      "model": "XGBoost",
+      "precision": 0.9994,
+      "recall": 0.997,
+      "f1": 0.9982,
+      "roc_auc": 0.9999,
+      "pr_auc": 0.9988
+    }
+  ],
+  "scoring_latency_ms": 29.612,
+  "thresholds": {
+    "low_max": 0.3,
+    "high_min": 0.7
+  }
+}
